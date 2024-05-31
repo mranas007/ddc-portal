@@ -22,13 +22,13 @@ class User
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['name'] = $user['name'];
-                header("Location: ../views/dashboard.php");
+                header("Location: ../index.php");
                 exit();
             } else {
-                header("Location: ../../index.php?notfound=invalidpass");
+                header("Location: ../views/login.php?notfound=invalidpass");
             }
         } else {
-            header("Location: ../../index.php?notfound=invaliduser");
+            header("Location: ../views/login.php?notfound=invaliduser");
         }
         $stmt->close();
         $this->conn->close();

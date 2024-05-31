@@ -118,10 +118,27 @@ body {
     background-color: #007BFF;
 }
 
-.error {
-    color: red;
+/* error alert in login */
+.alert {
+    padding: 15px;
     margin-bottom: 10px;
-    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert .alert-icon {
+    position: absolute;
+    left: 40px;
+    top: 46%;
+    transform: translateY(-50%);
+    font-size: 20px;
 }
 
 /* ================ login - end ==================== */
