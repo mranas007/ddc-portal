@@ -25,10 +25,10 @@ class User
                 header("Location: ../views/dashboard.php");
                 exit();
             } else {
-                header("Location: ../index.php?notfound=invalidpass");
+                header("Location: ../../index.php?notfound=invalidpass");
             }
         } else {
-            header("Location: ../index.php?notfound=invaliduser");
+            header("Location: ../../index.php?notfound=invaliduser");
         }
         $stmt->close();
         $this->conn->close();

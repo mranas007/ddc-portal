@@ -13,6 +13,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $user = new User($db);
         $user->login($username, $password);
     }  
-} else {
-    echo "Please fill in all fields.";
 }
