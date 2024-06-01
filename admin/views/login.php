@@ -6,21 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Admin Panel</title>
-    <link rel="stylesheet" href="../../static/stylesheets/style.css">
+    <link rel="stylesheet" href="../static/stylesheets/admin-style.css">
 
 </head>
 
 <body>
 
-        <?php
-        if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-            if (isset($_GET['invaliduser']) && $_GET['invaliduser'] === 'invaliduser') {
-                echo '<div class="alert"><span class="alert-icon">&#9888;</span> Invalid Username.</div>';
-            } elseif (isset($_GET['invalidpass']) && $_GET['invalidpass'] === 'invalidpass') {
-                echo '<div class="alert"><span class="alert-icon">&#9888;</span> Invalid Password.</div>';
-            }
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+        if (isset($_GET['invaliduser']) && $_GET['invaliduser'] === 'invaliduser') {
+            echo '<div class="alert"><span class="alert-icon">&#9888;</span> Invalid Username.</div>';
+        } elseif (isset($_GET['invalidpass']) && $_GET['invalidpass'] === 'invalidpass') {
+            echo '<div class="alert"><span class="alert-icon">&#9888;</span> Invalid Password.</div>';
         }
-        ?>
+    }
+    ?>
     <div class="login-container">
         <div id="log-con">
             <h2>Login</h2>
